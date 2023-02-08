@@ -31,11 +31,15 @@ public class Main {
         /*
         ЗАДАНИЕ №2
         */
+        System.out.println("Задание 2");
 
+        //Пустой объект класса Person
         Person noName = new Person();
 
-        System.out.println("Задание 2");
+        //Объект класса Person
         Person Nikita = new Person("Метлов Никита Михайлович", 17);
+
+        //Методы класса Person
         Nikita.move(Nikita.fullName);
         Nikita.talk(Nikita.fullName);
 
