@@ -10,6 +10,11 @@ public class Main {
         Phone phone2 = new Phone("89056783478", "Huawei 10 pro", 177);
         Phone phone3 = new Phone("89607801238", "Xiaomi 9 pro max", 200);
 
+        System.out.println("Объект 1: " + phone1.phone + " " + phone1.model + " " + phone1.weight);
+        System.out.println("Объект 2: " + phone2.phone + " " + phone2.model + " " + phone2.weight);
+        System.out.println("Объект 3: " + phone3.phone + " " + phone3.model + " " + phone3.weight);
+
+
         //Вывовы методов
         phone1.receiveCall("Мама Tele2");
         System.out.println(phone1.GetNumber());
