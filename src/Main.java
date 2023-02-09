@@ -1,3 +1,5 @@
+import javax.crypto.SealedObject;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -36,6 +38,7 @@ public class Main {
         /*
         ЗАДАНИЕ №2
         */
+
         System.out.println("Задание 2");
 
         //Пустой объект класса Person
@@ -48,5 +51,14 @@ public class Main {
         Nikita.move(Nikita.fullName);
         Nikita.talk(Nikita.fullName);
 
+        /*
+        ЗАДАНИЕ №3
+        */
+
+        Seasons mySeason = new Seasons();
+
+        System.out.println("мое любимое время года: " + mySeason.favoriteSeason + ", это " + mySeason.favoriteSeason.getDescription() + " со средней температурой - " + mySeason.favoriteSeason.middleTemp);
+        Seasons.loveSeason(Seasons.season.summer);
+        mySeason.getEnum();
     }
 }
