@@ -1,8 +1,11 @@
 import java.security.spec.RSAOtherPrimeInfo;
 
 public class Seasons {
+
+    //Поля класса
     public season favoriteSeason = season.summer;
 
+    //Перечисление времен года
     enum season{
         winter(-15),
         spring(10),
@@ -14,15 +17,18 @@ public class Seasons {
         autumn(0);
         double middleTemp;
 
+        //Конструктор перечисления
         season(double temp){
             this.middleTemp = temp;
         }
 
+        //Метод getDescription
         public String getDescription() {
             return "Холодное время года";
         }
     }
 
+    //Метод loveSeason
     public static void loveSeason(season time_season){
         switch (time_season) {
             case winter -> System.out.println("Я люблю зиму!");
@@ -33,6 +39,7 @@ public class Seasons {
         }
     }
 
+    //Метод getEnum
     public void getEnum(){
         for (season ses : season.values()){
             System.out.println(ses);

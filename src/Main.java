@@ -33,7 +33,7 @@ public class Main {
         //Метод sendMessage
         String[] nums = new String[] {"89001233456", "89056783478", "89607801238"};
         Phone.sendMessage(nums);
-        System.out.println("");
+        System.out.println(" ");
 
         /*
         ЗАДАНИЕ №2
@@ -55,10 +55,14 @@ public class Main {
         ЗАДАНИЕ №3
         */
 
+        //Создание экземпляра класса Seasons
         Seasons mySeason = new Seasons();
 
+        //Вывод любимого времени года
         System.out.println("мое любимое время года: " + mySeason.favoriteSeason + ", это " + mySeason.favoriteSeason.getDescription() + " со средней температурой - " + mySeason.favoriteSeason.middleTemp);
         Seasons.loveSeason(Seasons.season.summer);
+
+        //Вывод всех времен года
         mySeason.getEnum();
     }
 }
